@@ -1,0 +1,384 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ManageBrand">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchview"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!--<EditText
+            android:id="@+id/searchView"
+            android:hint="Search"
+            android:inputType="textCapWords"
+            android:drawableRight="@drawable/ic_baseline_search_24"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>-->
+
+        <HorizontalScrollView
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/manage_brand_tl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:id="@+id/table_row"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Artikel"
+                        android:singleLine="true"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/size"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Dodatek"
+                        android:singleLine="true"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/polnih"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Polnih (kos)"
+                        android:singleLine="true"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/odprtih"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Odprtih"
+                        android:singleLine="true"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/teza"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Teža"
+                        android:singleLine="true"
+
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/dodatkov"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Dodatkov"
+                        android:singleLine="true"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/dodatna"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Dodatna kol. (lit/kg)"
+                        android:singleLine="true"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/knjizno"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Knjižno stanje pred inventuro "
+                        android:singleLine="true"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/popisano"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:padding="10dp"
+                            android:text="Popisano skupaj"
+                        android:singleLine="true"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/enota"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Enota"
+                        android:singleLine="true"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/nabavna"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Nabavna cena"
+                        android:singleLine="true"
+
+                        android:textStyle="bold" />
+
+                </TableRow>
+                <TableRow
+                    android:visibility="gone"
+                    android:id="@+id/total_table_row"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border">
+
+                    <TextView
+                        android:id="@+id/namet"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Artikel"
+                        android:singleLine="true"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/sizet"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Dodatek"
+                        android:singleLine="true"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/polniht"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Polnih (kos)"
+                        android:singleLine="true"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/odprtiht"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Odprtih"
+                        android:singleLine="true"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tezat"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Teža"
+                        android:singleLine="true"
+
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/dodatkovt"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Dodatkov"
+                        android:singleLine="true"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/dodatnat"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Dodatna kol. (lit/kg)"
+                        android:singleLine="true"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/knjiznot"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Knjižno stanje pred inventuro "
+                        android:singleLine="true"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/popisanot"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Popisano skupaj"
+                        android:singleLine="true"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/enotat"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Enota"
+                        android:singleLine="true"
+
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/nabavnat"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/border"
+                        android:fontFamily="serif"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="Nabavna cena"
+                        android:singleLine="true"
+
+                        android:textStyle="bold" />
+
+                </TableRow>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/table_contents"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:listitem="@layout/custom_recycler_item" />
+
+
+            </TableLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/export" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabExportId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|start"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/import_icn" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:id="@+id/containerManageBrand"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</FrameLayout>

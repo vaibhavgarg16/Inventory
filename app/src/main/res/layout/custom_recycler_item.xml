@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/artikel"
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/border"
+                
+                android:padding="7.5dp"
+                android:singleLine="true"
+                android:text="artikel" />
+
+            <EditText
+                android:id="@+id/dodatek"
+                android:imeOptions="actionNext"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:singleLine="true"
+                android:text="dodatek" />
+
+            <EditText
+                android:id="@+id/polnih"
+                android:imeOptions="actionNext"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                
+                android:gravity="center"
+                android:inputType="text"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:singleLine="true"
+                android:text="polnih" />
+
+            <EditText
+                android:id="@+id/odprtih"
+                android:imeOptions="actionNext"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:singleLine="true"
+                android:text="odprtih" />
+
+            <EditText
+                android:id="@+id/teza"
+                android:imeOptions="actionNext"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:singleLine="true"
+                android:text="teza" />
+
+            <EditText
+                android:id="@+id/dodatkov"
+                android:imeOptions="actionNext"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:singleLine="true"
+                android:text="dodatkov" />
+
+            <EditText
+                android:id="@+id/dodatna"
+                android:imeOptions="actionNext"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:singleLine="true"
+                android:text="dodatna" />
+
+            <EditText
+                android:id="@+id/knjizno"
+                android:imeOptions="actionNext"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:singleLine="true"
+                android:text="knjizno" />
+
+            <EditText
+                android:id="@+id/popisano"
+                android:imeOptions="actionNext"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:singleLine="true"
+                android:text="popisano" />
+
+            <EditText
+                android:id="@+id/enota"
+                android:imeOptions="actionNext"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:singleLine="true"
+                android:text="enota" />
+
+            <EditText
+                android:id="@+id/nabavna"
+                android:imeOptions="actionNext"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/border"
+                
+                android:gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:singleLine="true"
+                android:text="nabavna" />
+
+            <ImageView
+                android:id="@+id/check_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/ic_check"
+                android:visibility="gone" />
+        </LinearLayout>
+    </HorizontalScrollView>
+</LinearLayout>

@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_margin="5dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/btnleft"
+                android:src="@drawable/leftarrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imageset"
+            android:src="@drawable/aperol"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="200dp"
+            android:layout_height="150dp"/>
+
+        <LinearLayout
+            android:id="@+id/artikelLay"
+            android:visibility="gone"
+            android:padding="5dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+
+                android:text="Artikel"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/artikel"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:hint="artikel"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tezaLay"
+            android:visibility="gone"
+            android:padding="5dp"
+            android:weightSum="2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text="Teza"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/teza"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:hint="artikel"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/dodatkovLay"
+            android:visibility="gone"
+            android:weightSum="2"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text="Dodatkov"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/dodatkov"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:hint="artikel"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/dodatnaLay"
+            android:visibility="gone"
+            android:weightSum="2"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text="Dodatna"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/dodatna"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:hint="artikel"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/knjiznoLay"
+            android:visibility="gone"
+            android:weightSum="2"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text="Knjizno"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/knjizno"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:hint="artikel"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/enotaLay"
+            android:visibility="gone"
+            android:weightSum="2"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:text="Enota"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/enota"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:hint="artikel"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nabavnaLay"
+            android:visibility="gone"
+            android:weightSum="2"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="Nabavna"
+
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/nabavna"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:hint="artikel"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/odprtihLay"
+            android:visibility="gone"
+            android:weightSum="2"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:text="Nabavna"
+
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/odprtih"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:hint="artikel"
+                />
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/polnih"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="polnih"
+            android:singleLine="true"/>
+        <EditText
+            android:id="@+id/dodatek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="Dodatek"
+            android:singleLine="true"/>
+
+        <EditText
+            android:id="@+id/popisano"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:hint="popisano"
+            android:singleLine="true" />
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight=".5"
+            android:layout_width="0dp"
+            android:layout_margin="5dp"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/btnRight"
+                android:src="@drawable/rightarrow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

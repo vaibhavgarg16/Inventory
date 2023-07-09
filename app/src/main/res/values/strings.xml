@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Inventory</string>
+    <string name="inventory">Inventory</string>
+    <string name="office">Office</string>
+    <string name="manage_brand">Manage Brand</string>
+    <string name="manage_quality">Manage Quality</string>
+    <string name="export_brands">Export Brands</string>
+    <string name="import_brands">Import Brands</string>
+    <string name="enter_brand_name">Enter Brand Name</string>
+    <string name="enter_size">Enter Size</string>
+    <string name="enter_desc">Enter Description</string>
+    <string name="enter_price">Enter Price</string>
+    <string name="title_activity_dashboard_navigation_drawer">DashboardNavigationDrawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Hello User</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_import">Import File</string>
+    <string name="menu_export">Export File</string>
+    <string name="menu_managebrand">Manage Brand</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
